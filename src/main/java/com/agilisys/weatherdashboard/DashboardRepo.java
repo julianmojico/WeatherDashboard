@@ -15,9 +15,12 @@ import org.springframework.stereotype.Component;
 @Component
 
 public interface  DashboardRepo extends MongoRepository<Dashboard,String>{
+    
+    @Query ("{'locations.woeid':?0}")
     public Dashboard findLocationsBywoeid(int woeid);
     
-  
-    
+    @Query ("{'locations.locationName':{ $regex: ?0 }}")
+    public Dashboard findLocationsBylocationName(String regexp);
+        
    
 }

@@ -15,8 +15,8 @@ import org.springframework.data.annotation.Id;
 public class Dashboard {
     
    @Id
-   private final String name;
-   private final ArrayList<Location>  locations;
+   private String name;
+   private ArrayList<Location>  locations;
    
    public Dashboard(String name) {
         this.locations = new ArrayList();
@@ -26,14 +26,42 @@ public class Dashboard {
    //woeid is location reference used by yahoo weather API
    public void addLocation(int woeid, String locationName) {
        Location location = new Location(woeid,locationName);
-       this.locations.add(location);
+       this.getLocations().add(location);
    }
    
    public void removeLocation(int woeid, String locationName) {
-       this.locations.remove(new Location(woeid,locationName));
+       this.getLocations().remove(new Location(woeid,locationName));
    }
 
    public Location searchLocation(int idx){
-       return this.locations.get(idx);
+       return this.getLocations().get(idx);
    }
+
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * @return the locations
+     */
+    public ArrayList<Location> getLocations() {
+        return locations;
+    }
+
+    /**
+     * @param locations the locations to set
+     */
+    public void setLocations(ArrayList<Location> locations) {
+        this.locations = locations;
+    }
 }
