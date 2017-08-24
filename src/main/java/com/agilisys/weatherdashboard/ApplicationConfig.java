@@ -30,7 +30,8 @@ class ApplicationConfig extends AbstractMongoConfiguration {
 
   @Override
   public Mongo mongo() throws Exception {
-    return new MongoClient("192.168.99.100",32768);
+    //return new MongoClient("192.168.99.100",32768);
+    return new MongoClient("127.0.0.1",27017);
   }
 
   @Override
