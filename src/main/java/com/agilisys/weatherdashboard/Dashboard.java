@@ -24,6 +24,10 @@ public class Dashboard implements Serializable {
        this.name = name;
    }
    
+   public Dashboard() {
+ 
+   }
+   
    //woeid is location reference used by yahoo weather API
    public void addLocation(int woeid, String locationName) {
        Location location = new Location(woeid,locationName);

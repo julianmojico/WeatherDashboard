@@ -37,7 +37,7 @@ public class DashboardController {
     }
     
     //add new dashboard
-    @RequestMapping(method = RequestMethod.POST, value = "/dashboards/update",produces = "application/json",consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.POST, value = "/dashboards/update",produces = "application/json",consumes = MediaType.ALL_VALUE)
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
     public void postDashboard(@RequestBody Dashboard db) {
