@@ -5,6 +5,7 @@
  */
 package com.agilisys.weatherdashboard;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import org.springframework.data.annotation.Id;
 
@@ -12,7 +13,7 @@ import org.springframework.data.annotation.Id;
  *
  * @author Julian
  */
-public class Dashboard {
+public class Dashboard implements Serializable {
     
    @Id
    private String name;

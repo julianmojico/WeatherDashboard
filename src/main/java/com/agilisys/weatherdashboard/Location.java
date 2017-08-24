@@ -18,6 +18,11 @@ public class Location {
         this.woeid = woeid;
         this.locationName = locationName;
     }
+    
+      public Location(){
+        this.woeid = woeid;
+        this.locationName = locationName;
+    }
     /**
      * @return the woeid
      */

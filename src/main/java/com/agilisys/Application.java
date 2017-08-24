@@ -10,10 +10,13 @@ package com.agilisys;
  * @author Julian
  */
 
+import com.agilisys.weatherdashboard.HTTPRequest;
 import com.agilisys.weatherdashboard.Dashboard;
 import com.agilisys.weatherdashboard.DashboardRepo;
 import com.mongodb.util.JSON;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,11 +73,10 @@ public class Application implements CommandLineRunner {
                System.out.println(repository.findLocationsBylocationName("San.*"));
                System.out.println(repository.findAll());
           
-
-                RestTemplate restTemplate = new RestTemplate();
-                Object[] result = restTemplate.getForObject("https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20%3D%202487889&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys", Object[].class);
-
-        LOGGER.info(result.toString());
+               
+              // String responseBody = HTTPRequest.getHTML("https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20%3D%202487889&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys");
+                 // LOGGER.info(responseBody.toString());
+       
 	}
 
 }
