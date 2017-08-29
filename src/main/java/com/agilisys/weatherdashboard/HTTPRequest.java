@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -16,8 +17,11 @@ import java.net.URL;
  *
  * @author Julian.Mojico
  */
+
+
 public class HTTPRequest {
     
+ 
     public static String getHTML(String urlToRead) throws Exception {
       StringBuilder result = new StringBuilder();
       URL url = new URL(urlToRead);
@@ -31,5 +35,5 @@ public class HTTPRequest {
       rd.close();
       return result.toString();
    }
-
+    
 }

@@ -13,6 +13,8 @@ public class Location {
     
     private int woeid;
     private String locationName;
+      // TODO: Define Location attribute type to retrieve random json from yahoo
+    
 
     public Location(int woeid,String locationName){
         this.woeid = woeid;

@@ -13,25 +13,15 @@ package com.agilisys;
 import com.agilisys.weatherdashboard.HTTPRequest;
 import com.agilisys.weatherdashboard.Dashboard;
 import com.agilisys.weatherdashboard.DashboardRepo;
-import com.mongodb.util.JSON;
-import java.nio.charset.Charset;
+import com.agilisys.weatherdashboard.LocationRepo;
+import com.agilisys.weatherdashboard.Location;
+import com.agilisys.weatherdashboard.LocationControllerWS;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
-import org.springframework.web.client.RestTemplate;
 
 
 @SpringBootApplication
@@ -40,7 +30,9 @@ public class Application implements CommandLineRunner {
     private final static Logger LOGGER = Logger.getLogger(Application.class.getName());
     
 	@Autowired
-	private DashboardRepo repository;
+	private DashboardRepo dashRepo;
+        @Autowired
+	private LocationRepo locationRepo;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
@@ -49,32 +41,41 @@ public class Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		repository.deleteAll();
+		dashRepo.deleteAll();
 
 		//create sample dashboard
                 Dashboard sampleDash = new Dashboard("Smith");
                 
                 sampleDash.addLocation(2487889, "San Diego, CA");
                 sampleDash.addLocation(2487882, "Test");
-		repository.save(sampleDash);
+		dashRepo.save(sampleDash);
 		
                 
 
 		// fetch all customers
 		System.out.println("Customers found with findAll():");
 		System.out.println("-------------------------------");
-		for (Dashboard dash : repository.findAll()) {
+		for (Dashboard dash : dashRepo.findAll()) {
 			System.out.println(dash);
 		}
 		System.out.println();
                 
-               System.out.println(repository.findLocationsBywoeid(123));
-               System.out.println(repository.findLocationsBywoeid(2487889));
-               System.out.println(repository.findLocationsBylocationName("San.*"));
-               System.out.println(repository.findAll());
-          
+               System.out.println(dashRepo.findLocationsBywoeid(123));
+               System.out.println(dashRepo.findLocationsBywoeid(2487889));
+               System.out.println(dashRepo.findLocationsBylocationName("San.*"));
+               System.out.println(dashRepo.findAll());
                
-              // String responseBody = HTTPRequest.getHTML("https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20%3D%202487889&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys");
+               
+               
+               /*
+               LocationControllerWS locations = new LocationControllerWS();
+               ArrayList<Location> arrLocat =  (ArrayList<Location>)locations.getLocations();
+               System.out.println(arrLocat.toString());
+               */
+                
+              
+               //String responseBody = HTTPRequest.getHTML(locations.getQuery());
+               //System.out.println(responseBody);
                  // LOGGER.info(responseBody.toString());
        
 	}
