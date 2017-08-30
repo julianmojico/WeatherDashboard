@@ -31,26 +31,26 @@ public class LocationControllerWS {
     
            
     @Autowired
-    private LocationRepo repo;
+    private LocationService service;
    
     
     @MessageMapping("/location/status/{woeid}") // /hello  if a message is sent to destination "/location/status/{id}", then the greetinggetLocationbyId() method is called.
     @SendTo("/queue/status") // /topic/greetings return value of method is broadcasted to all subscribers to "/queue/status"
     public @ResponseBody Location getLocationbyId (@Validated @PathVariable("woeid") String woeid) {
-        return repo.findOne(woeid);
+        return service.getLocationById(woeid);
     }
     
     @MessageMapping("/location/status/{woeid}") // /hello  if a message is sent to destination "/location/status/{id}", then the greetinggetLocationbyId() method is called.
     @SendTo("/queue/status") // /topic/greetings return value of method is broadcasted to all subscribers to "/queue/status"
     public void insertLocation (Location location) {
-        repo.save(location);
+        service.addLocation(location);
     }
     
     //method overload
      @MessageMapping("/location/status/{woeid}") // /hello  if a message is sent to destination "/location/status/{id}", then the greetinggetLocationbyId() method is called.
     @SendTo("/queue/status") // /topic/greetings return value of method is broadcasted to all subscribers to "/queue/status"
     public void insertLocation (ArrayList<Location> locations) {
-        repo.save(locations);
+        service.addLocation(locations);
     }
   
    

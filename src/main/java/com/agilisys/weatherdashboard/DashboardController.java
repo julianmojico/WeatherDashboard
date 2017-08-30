@@ -26,14 +26,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class DashboardController {
 
     @Autowired
-    private DashboardRepo repo;
+    private DashboardRepo repoDash;
+    
+    @Autowired
+    private LocationService locatServ;
     
     
     //get Dashboard by Id (name)
     @RequestMapping(method = RequestMethod.GET, value = "/dashboards/{id}")
     
     public @ResponseBody Dashboard getDashboard(@Validated @PathVariable("id") String id) {
-        return repo.findOne(id);
+        return repoDash.findOne(id);
     }
     
     //add new dashboard
@@ -43,7 +46,8 @@ public class DashboardController {
     public void postDashboard(@RequestBody Dashboard db) {
         
         //repo.insert(db);
-        repo.save(db);
+        repoDash.save(db);
+        locatServ.addLocation(db.getLocations());
          
     }
     
@@ -54,11 +58,11 @@ public class DashboardController {
        
         /*
         StringBuilder sb = new StringBuilder();
-        ArrayList dashboards = (ArrayList) repo.findAll();
+        ArrayList dashboards = (ArrayList) repoDash.findAll();
         dashboards.forEach((dashboard)->sb.append(dashboard.toString()));
         return sb.toString(); */
         
-        return repo.findAll().toArray();
+        return repoDash.findAll().toArray();
 // return new ResponseEntity<List<JSONObject>>(entities,HttpStatus.OK);
                 //repo.findAll();
     }

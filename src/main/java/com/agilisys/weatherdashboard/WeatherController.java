@@ -5,10 +5,20 @@
  */
 package com.agilisys.weatherdashboard;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  *
  * @author Julian.Mojico
  */
-class WeatherStatus {
+public class WeatherController {
+    
+   @Autowired
+   private LocationService ws;
+    
+   public WeatherController() {
+       
+       
+   }
     
 }

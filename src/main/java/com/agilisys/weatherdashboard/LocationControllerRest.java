@@ -50,7 +50,7 @@ public class LocationControllerRest {
         repo.findAll().forEach((Location location)-> chars.append("\""+location.getWoeid()+"\","));
         chars.deleteCharAt(chars.length() - 1);
         chars.append(")");
-        String aux = "select * from weather.forecast where woeid in" +chars ;
+        String aux = "select * from weather.forecast where woeid in " +chars ;
         return aux;
     }
     
