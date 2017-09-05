@@ -30,7 +30,8 @@ public class LocationService {
         locationRepo.findAll().forEach((Location location)-> chars.append("\""+location.getWoeid()+"\","));
         chars.deleteCharAt(chars.length() - 1);
         chars.append(")");
-        String aux = "select * from weather.forecast where woeid in " +chars;
+        String aux = "select * from weather.forecast where woeid in " +chars+"and u='c'";
+        //u=c stands for units celcius
         return aux;
     }
     
