@@ -26,13 +26,11 @@ public class DashboardController {
 
     @Autowired
     private DashboardRepo repoDash;
-    
-    @Autowired
-    private LocationService locatServ;
+
     
     
     //get Dashboard by Id (name)
-    @RequestMapping(method = RequestMethod.GET, value = "/dashboards/{id}")
+     @RequestMapping(method = RequestMethod.GET, value = "/dashboards/{id}")
     
     public @ResponseBody Dashboard getDashboard(@Validated @PathVariable("id") String id) {
         return repoDash.findOne(id);
@@ -46,7 +44,7 @@ public class DashboardController {
         
         //repo.insert(db);
         repoDash.save(db);
-        locatServ.addLocation(db.getLocations());
+        
          
     }
     

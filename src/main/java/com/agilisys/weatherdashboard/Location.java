@@ -6,42 +6,44 @@
 package com.agilisys.weatherdashboard;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.Indexed;
+
 
 /**
  *
  * @author Julian
  */
+
+
 public class Location {
     
     
-    @Indexed
-    private int woeid;
+    @Id
+    private String woeid;
     private String locationName;
     
 
-    public Location(int woeid,String locationName){
+    public Location(String woeid,String locationName){
         
         
         this.woeid = woeid;
         this.locationName = locationName;
     }
     
-      public Location(){
-        this.woeid = woeid;
-        this.locationName = locationName;
+    public Location(){
+        
     }
+    
     /**
      * @return the woeid
      */
-    public int getWoeid() {
-        return woeid;
+    public String getWoeid() {
+        return this.woeid;
     }
 
     /**
      * @param woeid the woeid to set
      */
-    public void setWoeid(int woeid) {
+    public void setWoeid(String woeid) {
         this.woeid = woeid;
     }
 
@@ -51,6 +53,7 @@ public class Location {
     public String getLocationName() {
         return locationName;
     }
+    
 
     /**
      * @param locationName the locationName to set

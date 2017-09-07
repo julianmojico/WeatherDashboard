@@ -13,13 +13,13 @@ function setConnected(connected) {
 }
 
 function connect() {
-    var socket = new SockJS('/dashboardSTOMP');
+    var socket = new SockJS('http://127.0.0.1:8080/api');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/greetings', function (greeting) {
-            showGreeting(JSON.parse(greeting.body).content);
+        stompClient.subscribe('/feed', function (greeting) {
+            showGreeting(JSON.parse(greeting.body));
         });
     });
 }
@@ -33,11 +33,12 @@ function disconnect() {
 }
 
 function sendName() {
-    stompClient.send("/app/hello", {}, JSON.stringify({'name': $("#name").val()}));
+    //stompClient.send("/app/status", {}, JSON.stringify({'woeid': $("#name").val()}));
+    stompClient.send("/app/status", {}, $("#name").val());
 }
 
 function showGreeting(message) {
-    $("#greetings").append("<tr><td>" + message + "</td></tr>");
+     $("#greetings").append("<tr><td>" + JSON.stringify(message) + "</td></tr>");
 }
 
 $(function () {
