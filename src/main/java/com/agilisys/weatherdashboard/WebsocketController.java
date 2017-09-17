@@ -24,6 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.annotation.Validated;
 
 /**
  *
@@ -54,7 +55,15 @@ public class WebsocketController {
    @MessageMapping("/status") 
    @SendTo("/feed")
     public String getWeatherStatus (String dashid) throws MalformedURLException, URISyntaxException, Exception {
+       
+       //el puto string no lo pasa bien en dashidd
+       
+        //dashid = dashid.substring(2, dashid.length()-1);
+        dashid = dashid.substring(1, dashid.length()-1);
+        System.out.println("Lenght:"+dashid.length());
+        System.out.println(dashid);
         
+        //@TODO: parsear string, armar http y traer dashboard,getLocations del dashboard, llamar al repo de Weather (hay que hacerlo) y hacer la query a todos los locations.
          final StringBuilder chars = new StringBuilder();       
         chars.append("( ");
         dash.getDashboard(dashid).getLocations().forEach((Location location)-> chars.append("\""+location.getWoeid()+"\","));
