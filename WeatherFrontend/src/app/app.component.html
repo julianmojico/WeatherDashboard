@@ -8,11 +8,11 @@
 <div id="dashboards">
 <h2>Dashboards available: </h2>
 <ul>
-  <li  *ngFor="let dash of dashboards"
-         [class.selected]="dash === selectedHero"
-          (click)="onSelect(dash)"
+  <li  *ngFor="let dash of this.dashboardList"
+         [class.selected]="dash === selectedDash"
+          (click)="onSelect(dash.id)"
   >
-    {{dash}}
+    {{dash.id}}
   </li>
 </ul>
 </div>
