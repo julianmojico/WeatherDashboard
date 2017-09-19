@@ -7,19 +7,44 @@ import { StompService } from 'ng2-stomp-service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
 
-  private profiles = ['Fulano','Mengano'];
+
+  //generate input simulation
+
+  dash1: Dashboard = {
+
+    id: "Fulano",
+    locations: [ {woeid:123,locationName:"invalidLocation"},{woeid:2487889,"locationName" : "San Diego, CA"}   ]
+    }
+  
+
+  initialDashboard = new Dashboard();
+  private dashboards = ['Fulano','Mengano'];
+
+  //generate input simulation
+  
   private subscription : any;
   title = 'Weather Dashboard';
+  selectedDash :  Dashboard;
+  dashboardList : Dashboard[];
+  se
+ 
+   onSelect (dash:Dashboard): void {
+    this.selectedDash = dash
+   }
+
   //response 
-  
-  public response = (data) => {
+    public response = (data) => {
     console.log(data)
   }
 
   constructor(stomp: StompService) {
     
+   
+  
      //configuration 
      stomp.configure({
   
@@ -38,7 +63,7 @@ export class AppComponent {
        
        //send data 
        
-       stomp.send("/app/status",'Fulano');
+       stomp.send("/app/status", this.selectedDash );
        
        /*
        //unsubscribe 
@@ -55,4 +80,19 @@ export class AppComponent {
 
 
 }
+
+
+
+}
+
+
+export class Dashboard{
+  id: string;
+  locations: Location[];
+}
+
+export class Location {
+  woeid: number;
+  locationName: string;
+
 }
