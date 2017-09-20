@@ -18,6 +18,7 @@ public class Dashboard implements Serializable {
    @Id
    private String name;
    private ArrayList<Location>  locations;
+   private String query;
    
    public Dashboard(String name) {
         this.locations = new ArrayList();
@@ -68,5 +69,19 @@ public class Dashboard implements Serializable {
      */
     public void setLocations(ArrayList<Location> locations) {
         this.locations = locations;
+    }
+
+    /**
+     * @return the query
+     */
+    public String getQuery() {
+        return query;
+    }
+
+    /**
+     * @param query the query to set
+     */
+    public void setQuery(String query) {
+        this.query = query;
     }
 }

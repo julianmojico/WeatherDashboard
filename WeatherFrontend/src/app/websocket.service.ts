@@ -4,11 +4,12 @@ import { StompService } from "ng2-stomp-service";
 @Injectable()
 export class WebsocketService {
 private subscription : any;
-
+private stomp: StompService;
 
   //response 
     public response = (data) => {
     console.log(data)
+    return data;
   }
     constructor(stomp: StompService) {
     
@@ -21,18 +22,19 @@ private subscription : any;
        debug:true,
        queue:{'init':true}
      });
-     
+    }
+     public connect(){
      //start connection 
-     stomp.startConnect().then(() => {
-       stomp.done('init');
+     this.stomp.startConnect().then(() => {
+       this.stomp.done('init');
        console.log('connected');
-       
+     
        //subscribe 
-       this.subscription = stomp.subscribe('/feed', this.response);
+       this.subscription = this.stomp.subscribe('/feed', this.response);
        
        //send data 
        
-       stomp.send("/app/status", "Fulano" );
+       this.stomp.send("/app/status", "Fulano");
        
        /*
        //unsubscribe 
@@ -43,6 +45,8 @@ private subscription : any;
          console.log( 'Connection closed' )
        })
        */
+
+       return this.response;
      });
     
 
@@ -50,4 +54,7 @@ private subscription : any;
 
 }
 
+
+
 }
+

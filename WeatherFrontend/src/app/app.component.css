@@ -4,6 +4,18 @@
     color: white;
   }
 
+
+
+  .status {
+
+    border:  1px solid gray;
+    margin: 5px;
+    padding: 2px;
+    max-height: 15px;
+    max-width: 900px;
+
+  }
+
   li {
     cursor: pointer;
     background-color: #BBD8DC !important;
@@ -42,7 +54,7 @@ h1,h2 {
 
 #mainDiv {
 
-    position: absolute;
+    position: relative;
     text-align: center;
 
 }

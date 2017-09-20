@@ -63,4 +63,10 @@ public class DashboardController {
 // return new ResponseEntity<List<JSONObject>>(entities,HttpStatus.OK);
                 //repo.findAll();
     }
+    
+        public void updateWeather(Dashboard dash, String queryResult) {
+            dash.setQuery(queryResult);
+            repoDash.save(dash);
+          
+      }
 }

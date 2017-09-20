@@ -86,9 +86,10 @@ public class WebsocketController {
                 Logger.getLogger(Application.class.getName()).log(Level.WARNING,"HTTP Bad Request: " + ex.toString() + "\n Check locations collection is not empty",ex);
               }
              
-           
+                dash.updateWeather(dash.getDashboard(dashid), responseBody);
             
-            Query queryResult = new Query(dashid,responseBody);
+                   /*
+            
             //TODO: Poner esto scheduled (El ejemplo debe estar en historial de la comput del work  
               Mongo mongo = new Mongo("localhost", 27017);
 			DB db = mongo.getDB("local");
@@ -97,7 +98,7 @@ public class WebsocketController {
                         long timestamp = date.getTime() / 1000;
                         
                         //force the id so each time data is retrieved, it overwrites the previous status
-                        ObjectId id= new ObjectId("59a82d091b26d81ea4e6238c");
+                        ObjectId id= new ObjectId(date);
                         System.out.println("Current timestamp(unix format): "+timestamp);
                         
                         
@@ -113,7 +114,7 @@ public class WebsocketController {
                         collection.insert(dbObject);
                         
                          //TODO: Salvar query al collection.
-                               
+                           */    
             
               return responseBody;
     } 

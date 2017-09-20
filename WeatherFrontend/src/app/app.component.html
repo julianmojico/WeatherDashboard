@@ -1,8 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div id="mainDiv">
   <h1>
-    Welcome to {{selectedDash}}'s Dashboard!
+    Welcome to {{selectedDash.id}}'s Dashboard!
   </h1>
+
+  <div id="weather">
+      <div class="status" *ngFor="let location of this.selectedDash.locations">
+        {{location.woeid}}
+
+      </div>
+  </div>
+
+<div class="weather">
+{{this.selectedDash.query.query.created}}
 </div>
 
 <div id="dashboards">
@@ -10,7 +20,7 @@
 <ul>
   <li  *ngFor="let dash of this.dashboardList"
          [class.selected]="dash === selectedDash"
-          (click)="onSelect(dash.id)"
+          (click)="onSelect(dash)"
   >
     {{dash.id}}
   </li>

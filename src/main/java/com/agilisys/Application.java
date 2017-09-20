@@ -57,6 +57,7 @@ public class Application implements CommandLineRunner {
                 Dashboard dashBoard = new Dashboard("Fulano");
                 dashBoard.addLocation("2487889", "San Diego, CA");
                 dash.postDashboard(dashBoard);
+                
                 //dash.getDashboard("Fulano");
                
             
