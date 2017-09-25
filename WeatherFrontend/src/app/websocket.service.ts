@@ -1,15 +1,21 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { StompService } from "ng2-stomp-service";
 
 @Injectable()
-export class WebsocketService {
+export class WebsocketService implements OnInit{
 private subscription : any;
 private stomp: StompService;
 
   //response 
     public response = (data) => {
     console.log(data)
-    return data;
+    return new Promise(function (resolve,reject) {
+      if (data === true)
+      resolve();
+      else 
+      reject();
+  
+});
   }
     constructor(stomp: StompService) {
     
@@ -22,8 +28,11 @@ private stomp: StompService;
        debug:true,
        queue:{'init':true}
      });
+     
     }
-     public connect(){
+
+    ngOnInit() {
+    
      //start connection 
      this.stomp.startConnect().then(() => {
        this.stomp.done('init');
@@ -50,11 +59,11 @@ private stomp: StompService;
      });
     
 
-
-
-}
-
-
+  }
 
 }
+
+  
+
+
 

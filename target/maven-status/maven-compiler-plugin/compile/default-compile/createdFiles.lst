@@ -1,0 +1,9 @@
+com\agilisys\weatherdashboard\HTTPRequest.class
+com\agilisys\weatherdashboard\DashboardController.class
+com\agilisys\weatherdashboard\ApplicationConfig.class
+com\agilisys\weatherdashboard\DashboardRepo.class
+com\agilisys\weatherdashboard\WebsocketConfig.class
+com\agilisys\Application.class
+com\agilisys\weatherdashboard\Location.class
+com\agilisys\weatherdashboard\WebsocketController.class
+com\agilisys\weatherdashboard\Dashboard.class
