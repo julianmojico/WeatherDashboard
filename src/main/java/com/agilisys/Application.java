@@ -10,22 +10,11 @@ package com.agilisys;
  * @author Julian
  */
 
-import com.agilisys.weatherdashboard.HTTPRequest;
 import com.agilisys.weatherdashboard.Dashboard;
 import com.agilisys.weatherdashboard.DashboardController;
 import com.agilisys.weatherdashboard.WebsocketController;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.Mongo;
-import com.mongodb.util.JSON;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URL;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -56,8 +45,15 @@ public class Application implements CommandLineRunner {
                 
                 Dashboard dashBoard = new Dashboard("Fulano");
                 dashBoard.addLocation("2487889", "San Diego, CA");
-                dash.postDashboard(dashBoard);
+                dashBoard.addLocation("2487449", "PEPE San Diego, CA");
+                dashBoard.addLocation("1111", "Villa Adelina,SA");
                 
+                Dashboard dashBoard2 = new Dashboard("Mengano");
+                dashBoard2.addLocation("11111", "SampleLocation1");
+                dashBoard.addLocation("1234", "SampleLocation2");
+                
+                dash.postDashboard(dashBoard);
+                dash.postDashboard(dashBoard2);
                 //dash.getDashboard("Fulano");
                
             

@@ -1,0 +1,60 @@
+
+  .selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+
+
+
+  .status {
+
+    border:  1px solid gray;
+    margin: 5px;
+    padding: 2px;
+    max-height: 15px;
+    max-width: 900px;
+
+  }
+
+  li {
+    cursor: pointer;
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+
+  li.selected:hover {
+    cursor: pointer;
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+
+#dashboards {
+    
+width: 300px;
+    border: 5px solid firebrick;
+    padding: 25px;
+    margin: 25px;
+    align-self: flex-start;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin:0px;
+    bottom: 0px;
+    background: cadetblue;
+    padding: 5px;
+
+}
+
+h1,h2 {
+    text-align: center;
+    text-decoration: cornflowerblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+    position: relative
+}
+
+#mainDiv {
+
+    position: relative;
+    text-align: center;
+
+}
