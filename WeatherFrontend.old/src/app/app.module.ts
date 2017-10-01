@@ -6,13 +6,14 @@ import { StompService } from 'ng2-stomp-service';
 import { HttpServiceService } from './http-service.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { WebsocketService } from "./websocket.service";
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule
+    BrowserModule, HttpClientModule,FormsModule
   ],
   providers: [StompService,HttpServiceService,WebsocketService],
   bootstrap: [AppComponent]

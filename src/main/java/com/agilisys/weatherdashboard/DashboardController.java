@@ -29,8 +29,7 @@ public class DashboardController {
     @Autowired
     private DashboardRepo repoDash;
 
-    
-    
+
     //get Dashboard by Id (name)
      @RequestMapping(method = RequestMethod.GET, value = "/dashboards/{id}")
     
@@ -42,12 +41,12 @@ public class DashboardController {
     @RequestMapping(method = RequestMethod.POST, value = "/dashboards/update",produces = "application/json",consumes = MediaType.ALL_VALUE)
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
-    public void postDashboard(@RequestBody Dashboard db) {
+    public Dashboard postDashboard(@RequestBody Dashboard db) {
         
         //repo.insert(db);
+        //        if (!repoDash.exists(db.getName())) {
         repoDash.save(db);
-        
-         
+        return db;
     }
     
     //get full list of  Dashboards

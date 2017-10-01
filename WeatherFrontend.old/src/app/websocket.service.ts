@@ -5,7 +5,7 @@ import { StompService } from "ng2-stomp-service";
 export class WebsocketService {
   
 private subscription : any;
-
+stomp:StompService
 public datastream : any;
 
 private getData(data){
@@ -57,7 +57,7 @@ public response = (data) => {
        //send data 
        
        //stomp.send('destionation',{"data":"data"});
-       stomp.send("/app/status", "Mengano");
+       //stomp.send("/app/status", "Mengano");
        
        /*
        //unsubscribe 
@@ -68,15 +68,17 @@ public response = (data) => {
          console.log( 'Connection closed' )
        })
        */
-
-this.datastream = "res";
-
-let debug="a";
-
 });
-    
-  let aux2;
 
+//save stomp status for later use
+this.stomp=stomp;
+  }
+
+  send(dashId:string){
+    
+    //clean previous dashboard weather status
+    this.datastream=null;
+    this.stomp.send("/app/status",dashId);
   }
 
 }

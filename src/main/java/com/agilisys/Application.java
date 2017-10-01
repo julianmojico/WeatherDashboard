@@ -43,12 +43,12 @@ public class Application implements CommandLineRunner {
                 
                 Logger.getLogger("org.agilisys").setLevel(Level.WARNING);
                 
-                Dashboard dashBoard = new Dashboard("Fulano");
+                Dashboard dashBoard = new Dashboard("FulanoBE");
                 dashBoard.addLocation("2487889", "San Diego, CA");
                 dashBoard.addLocation("2487449", "PEPE San Diego, CA");
                 dashBoard.addLocation("1111", "Villa Adelina,SA");
                 
-                Dashboard dashBoard2 = new Dashboard("Mengano");
+                Dashboard dashBoard2 = new Dashboard("MenganoBE");
                 dashBoard2.addLocation("11111", "SampleLocation1");
                 dashBoard.addLocation("1234", "SampleLocation2");
                 

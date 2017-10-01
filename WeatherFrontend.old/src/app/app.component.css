@@ -16,17 +16,56 @@
 
   }
 
-  li {
+  li,li.selected:hover {
     cursor: pointer;
     background-color: #BBD8DC !important;
     color: white;
+    list-style: none;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
   }
 
-  li.selected:hover {
-    cursor: pointer;
-    background-color: #BBD8DC !important;
-    color: white;
+  .weather {
+    box-sizing:border-box;
+    color:rgba(0, 0, 0, 0.87);
+    cursor:default;
+    direction:ltr;
+    display:block;
+    font-family:"Roboto Slab", "Times New Roman", serif;
+    font-size:14px;
+    font-variant-ligatures:none;
+    height:413.4px;
+    line-height:19px;
+    min-height:46px;
+    outline-color:rgba(0, 0, 0, 0.87);
+    outline-style:none;
+    outline-width:0px;
+    padding-bottom:15px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:12px;
+    pointer-events:auto;
+    unicode-bidi:isolate;
+    white-space:pre-wrap;
+    width:551px;
+    word-wrap:break-word;
+    -webkit-user-modify:read-only;
   }
+
+  #weatherDiv {
+
+    color:    rgba(0, 0, 0, 0.87);
+    direction:    ltr;
+    display:    block;
+    font-family:    Roboto, arial, sans-serif;
+    font-size:    15px;
+    height:    1980px;
+    pointer-events:    none;
+    position:    relative;
+    width:    1040px;
+  }
+
 
 #dashboards {
     
@@ -42,6 +81,7 @@ width: 300px;
     bottom: 0px;
     background: cadetblue;
     padding: 5px;
+
 
 }
 

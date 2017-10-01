@@ -11,21 +11,26 @@
       </div>
   </div>
 -->
-<div class="weather">
+
 <h3>Weather Status</h3>
-<!--{{this.selectedDash.query}}-->
+<div id="weatherDiv">
+<div class="weather" *ngFor="let  "
 {{this.ws.datastream}}
 </div>
 
 <div id="dashboards">
 <h2>Dashboards available: </h2>
 <ul>
-  <li  *ngFor="let dash of this.dashboardList"
+  <li  *ngFor="let dash of this.httpservice.dashboardList"
          [class.selected]="dash === selectedDash"
-          (click)="onSelect(dash)"
-  >
+          (click)="onSelect(dash)">
     {{dash.name}}
   </li>
 </ul>
+<div id="updateDashboard">
+  <label>Create new Dashboard: </label>
+  <input #newDash type="text"  default="Insert name" value="Insert name!">
+  <button (click)="createNewDash(newDash.value)">"Create Dashboard"</button>
+</div>
 </div>
 
