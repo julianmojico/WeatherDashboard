@@ -70,6 +70,7 @@
 #dashboards {
     
 width: 300px;
+height: 100%; 
     border: 5px solid firebrick;
     padding: 25px;
     margin: 25px;

@@ -4,14 +4,15 @@ import { StompService } from "ng2-stomp-service";
 @Injectable()
 export class WebsocketService {
   
-private subscription : any;
+
 stomp:StompService
 public datastream : any;
+subscription: Promise<void>
 
 private getData(data){
-  let debug = 1;
-  this.datastream=JSON.stringify(data.query);
   
+  this.datastream=JSON.stringify(data.query);
+
 }
 
 public response = (data) => {
@@ -38,17 +39,16 @@ public response = (data) => {
    
     
      //start connection 
-    stomp.startConnect().then(res => {
+     this.subscription = stomp.startConnect().then(res => {
        stomp.done('init');
        console.log('connected');
      
        //subscribe 
-       var aux;
-       this.subscription = stomp.subscribe('/feed',   (data) =>{
+    stomp.subscribe('/feed',   (data) =>{
          
         if (data) this.getData((data)) 
         //else console.log("error retrieving stomp subscription: "+err);
-      
+        
       }
       
       );
@@ -68,7 +68,7 @@ public response = (data) => {
          console.log( 'Connection closed' )
        })
        */
-});
+})
 
 //save stomp status for later use
 this.stomp=stomp;

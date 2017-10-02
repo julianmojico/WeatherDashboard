@@ -4,19 +4,29 @@
     Welcome to {{selectedDash.name}}'s Dashboard!
   </h1>
 
-  <div id="weather">
+<div id="weather">
 <div class="status" *ngFor="let location of selectedDash.locations">
-        {{location.locationName}}
-
-      </div>
+<span>{{location.locationName}}</span>
+</div>
   </div>
--->
 
 <h3>Weather Status</h3>
 <div id="weatherDiv">
-<div class="weather" *ngFor="let  "
-{{this.ws.datastream}}
+<div class="weather" *ngFor="let status of this.selectedDash.status">
+<ul>
+<li>{{status.wind}}</li>
+{{status.atmosphere}}
+  {{status.astronomy}}
+    {{status.image}}
+      {{status.conditionTemp}}
+        {{status.conditionText}}
+          {{status.conditionDate}}
+            {{status.windSpeed}}
+              {{status.windDirection}}
+</ul>
 </div>
+</div>
+
 
 <div id="dashboards">
 <h2>Dashboards available: </h2>
@@ -29,8 +39,19 @@
 </ul>
 <div id="updateDashboard">
   <label>Create new Dashboard: </label>
-  <input #newDash type="text"  default="Insert name" value="Insert name!">
+  <input #newDash type="text"  value="Insert name!">
   <button (click)="createNewDash(newDash.value)">"Create Dashboard"</button>
 </div>
+<div id="addLocation">  
+  <form>
+      <input 
+      (keypress)="this.httpservice.locationSearch(locationSearch.value)"
+      #locationSearch type="text"  value="Add location" list="yahooLocations">
+  <datalist id="yahooLocations">
+    <option  *ngFor="let locat of this.httpservice.yahooLocations"> {{locat.woeid}},{{locat.name}},{{locat.country.code}}
+  </datalist>
+  <input type="submit" value="Add"  (click)="addLocation(locationSearch.value)" >
+  </form>
 </div>
+
 
