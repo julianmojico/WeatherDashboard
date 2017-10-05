@@ -6,28 +6,24 @@ export class WebsocketService {
   
 
 stomp:StompService
-public datastream : any;
+//public datastream : any = "emptyBuffer"
+public datastream : Promise<any>
 subscription: Promise<void>
 
-private getData(data){
-  
-  this.datastream=JSON.stringify(data.query);
-
-}
 
 public response = (data) => {
 
   console.log("data:" + JSON.stringify(data));
-  this.datastream = JSON.stringify(data);
-  
-  return data;
+
+  let prom = new Promise<any>((resolve,reject)=>{resolve(data),reject(console.log("error in websocket promise"))})
+  this.datastream=prom
+
+  return prom;
 }
 
   
     constructor(stomp: StompService) {
-    
-   
-  
+     
      //configuration 
      stomp.configure({
   
@@ -44,20 +40,13 @@ public response = (data) => {
        console.log('connected');
      
        //subscribe 
-    stomp.subscribe('/feed',   (data) =>{
-         
-        if (data) this.getData((data)) 
-        //else console.log("error retrieving stomp subscription: "+err);
-        
-      }
-      
-      );
+    stomp.subscribe('/feed', this.response);
 
        
        //send data 
        
        //stomp.send('destionation',{"data":"data"});
-       //stomp.send("/app/status", "Mengano");
+       stomp.send("/app/status", "FulanoBE");
        
        /*
        //unsubscribe 
@@ -68,7 +57,7 @@ public response = (data) => {
          console.log( 'Connection closed' )
        })
        */
-})
+}, err=>{console.log("Error retrieving data from websocket: "+err)})
 
 //save stomp status for later use
 this.stomp=stomp;

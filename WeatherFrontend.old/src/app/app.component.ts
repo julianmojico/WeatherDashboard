@@ -21,7 +21,7 @@ export class AppComponent implements OnInit  {
   
   selectedDash :  Dashboard  = new Dashboard();
   dashboardList : Dashboard[];
-
+  
   
  constructor(private ws:WebsocketService, private httpservice: HttpServiceService ) {
  
@@ -1457,7 +1457,7 @@ createNewDash(name:string){
          }
       }
    }
-    this.ws.datastream = sampleData
+    //this.ws.datastream = sampleData
     this.parseWeather();
    }
 
@@ -1469,16 +1469,23 @@ createNewDash(name:string){
       //clean historic status
       this.selectedDash.status = null;
       console.log("Parsing Weather Status..")
-      JSON.parse(this.ws.datastream)['results']['channel'].forEach(element => {
+//      JSON.parse(this.ws.datastream)['results']['channel'].forEach(element => {
+  let statusArray = new Array();
+  let context = this;
+  this.ws.stomp.subscribe("/feed",data=>{
+  data.query.results.channel.forEach(element => {
         let status:Status = new Status();
-        status.conditionDate=element['item']['title']['condition']['date']
-        status.conditionTemp=element['item']['title']['condition']['temp']
-        status.conditionText=element['item']['title']['condition']['text']
-        status.image=element['image']['url'];
-        status.windSpeed=element['wind']['speed']
-        status.windDirection=element['wind']['direction']
-        this.selectedDash.status.push(status)
+        status.conditionDate=element.item.condition.date
+        status.conditionTemp=element.item.condition.temp
+        status.conditionText=element.item.condition.text
+        status.windSpeed=element.wind.speed
+        status.windDirection=element.wind.direction
+        statusArray.push(status)
       });
+      context.selectedDash.status=statusArray
+    }
+  
+  ).then(this.ws.stomp.send("/app/status", "FulanoBE"));
     }
 
 
@@ -1491,6 +1498,7 @@ export class Dashboard{
 
   contructor(name:string){
     this.name=name;
+    this.status = [];
   }
   name: string;
   locations: Location[]  = new Array();;
