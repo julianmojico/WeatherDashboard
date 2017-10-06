@@ -66,7 +66,7 @@ public class WebsocketController {
         //@TODO: parsear string, armar http y traer dashboard,getLocations del dashboard, llamar al repo de Weather (hay que hacerlo) y hacer la query a todos los locations.
          final StringBuilder chars = new StringBuilder();       
         chars.append("( ");
-        dash.getDashboard(dashid).getLocations().forEach((Location location)-> chars.append("\""+location.getWoeid()+"\","));
+        dash.getDashboard(dashid).getLocations().forEach((Location location)-> chars.append('\"'+location.getWoeid()+'\"'+','));
          chars.deleteCharAt(chars.length() - 1);
         chars.append(")");
         String aux = "select * from weather.forecast where woeid in " +chars+" and u='c'";

@@ -43,6 +43,7 @@ public class Application implements CommandLineRunner {
                 
                 Logger.getLogger("org.agilisys").setLevel(Level.WARNING);
                 
+                /* Sample data:
                 Dashboard dashBoard = new Dashboard("FulanoBE");
                 dashBoard.addLocation("2487889", "San Diego, CA");
                 dashBoard.addLocation("2487449", "PEPE San Diego, CA");
@@ -55,7 +56,8 @@ public class Application implements CommandLineRunner {
                 dash.postDashboard(dashBoard);
                 dash.postDashboard(dashBoard2);
                 //dash.getDashboard("Fulano");
-               
+                
+*               */
             
             
                    

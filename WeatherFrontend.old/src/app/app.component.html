@@ -5,8 +5,9 @@
   </h1>
 
 <div id="weather">
-<div class="status" *ngFor="let location of selectedDash.locations">
-<span>{{location.locationName}}</span>
+<h3>Available locations:</h3>
+<div class="status" *ngFor="let location of selectedDash.locations">  
+<li>{{location.locationName}}</li>
 </div>
   </div>
 
@@ -14,15 +15,12 @@
 <div id="weatherDiv">
 <div class="weather" *ngFor="let status of this.selectedDash.status">
 <ul>
-<li>{{status.wind}}</li>
-{{status.atmosphere}}
-  {{status.astronomy}}
-    {{status.image}}
-      {{status.conditionTemp}}
-        {{status.conditionText}}
-          {{status.conditionDate}}
-            {{status.windSpeed}}
-              {{status.windDirection}}
+<li><h3>{{status.title}}</h3></li>
+<li>{{status.conditionDate}}</li>
+<li>Weather condition: {{status.conditionText}}</li>
+<li>Temperature: {{status.conditionTemp}}C*</li>
+<li>Wind speed: {{status.windSpeed}}</li>
+<li>Wind Direction: {{status.windDirection}}</li>
 </ul>
 </div>
 </div>

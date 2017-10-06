@@ -26,31 +26,11 @@
     list-style-type: none;
   }
 
-  .weather {
-    box-sizing:border-box;
-    color:rgba(0, 0, 0, 0.87);
-    cursor:default;
-    direction:ltr;
-    display:block;
-    font-family:"Roboto Slab", "Times New Roman", serif;
-    font-size:14px;
-    font-variant-ligatures:none;
-    height:413.4px;
-    line-height:19px;
-    min-height:46px;
-    outline-color:rgba(0, 0, 0, 0.87);
-    outline-style:none;
-    outline-width:0px;
-    padding-bottom:15px;
-    padding-left:15px;
-    padding-right:15px;
-    padding-top:12px;
-    pointer-events:auto;
-    unicode-bidi:isolate;
-    white-space:pre-wrap;
+  .weather, .weather>ul {
+    
+
     width:551px;
-    word-wrap:break-word;
-    -webkit-user-modify:read-only;
+
   }
 
   #weatherDiv {
@@ -94,7 +74,7 @@ h1,h2 {
 }
 
 #mainDiv {
-
+    
     position: relative;
     text-align: center;
 

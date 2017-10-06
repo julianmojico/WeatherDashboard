@@ -13,7 +13,7 @@ subscription: Promise<void>
 
 public response = (data) => {
 
-  console.log("data:" + JSON.stringify(data));
+  //console.log("data:" + JSON.stringify(data));
 
   let prom = new Promise<any>((resolve,reject)=>{resolve(data),reject(console.log("error in websocket promise"))})
   this.datastream=prom
