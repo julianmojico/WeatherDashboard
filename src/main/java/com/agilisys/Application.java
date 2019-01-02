@@ -10,15 +10,15 @@ package com.agilisys;
  * @author Julian
  */
 
-import com.agilisys.weatherdashboard.Dashboard;
 import com.agilisys.weatherdashboard.DashboardController;
 import com.agilisys.weatherdashboard.WebsocketController;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 @SpringBootApplication

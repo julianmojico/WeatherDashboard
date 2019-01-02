@@ -5,9 +5,10 @@
  */
 package com.agilisys.weatherdashboard;
 
+import org.springframework.data.annotation.Id;
+
 import java.io.Serializable;
 import java.util.ArrayList;
-import org.springframework.data.annotation.Id;
 
 /**
  *
