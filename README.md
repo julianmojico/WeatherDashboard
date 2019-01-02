@@ -1,5 +1,6 @@
 # WeatherDashboard
 
+install mongodb community (by default uses no user/password nor authentication)
 git clone https://github.com/cepix/WeatherDashboard/
 
 
