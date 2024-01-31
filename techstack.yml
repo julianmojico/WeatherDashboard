@@ -1,0 +1,1021 @@
+repo_name: julianmojico/WeatherDashboard
+report_id: a0bd9fcd162e6a06f87badb692cb260b
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-31T08:48:48+00:00'
+requested_by: julianmojico
+provider: github
+branch: master
+detected_tools_count: 49
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard
+  detection_source: Repo Metadata
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard
+  detection_source: Repo Metadata
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard
+  detection_source: Repo Metadata
+- name: Angular
+  description: A platform for building mobile and desktop web applications
+  website_url: https://angular.io
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Javascript MVC Frameworks
+  image_url: https://img.stackshare.io/service/3745/cb8U-gL6_400x400.jpg
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: RxJS
+  description: The Reactive Extensions for JavaScript
+  website_url: http://reactivex.io/rxjs/
+  version: 5.4.2
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Concurrency Frameworks
+  image_url: https://img.stackshare.io/service/1796/984368.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: MongoDB
+  description: The database for giant ideas
+  website_url: http://www.mongodb.com/
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1030/leaf-360x360.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Julian
+  last_updated_on: 2017-08-22 06:03:02.000000000 Z
+- name: Spring Data
+  description: Provides a consistent approach to data access – relational, non-relational,
+    map-reduce, and beyond
+  website_url: https://spring.io/projects/spring-data
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/7624/IG6D4Ro2_400x400.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Julian
+  last_updated_on: 2017-09-07 04:25:39.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard
+  detection_source: Repo Metadata
+- name: Jasmine
+  description: DOM-less simple JavaScript testing framework
+  website_url: http://jasmine.github.io/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/831/7c0b595409af531b9cdeb07f8c513e8b.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: Karma
+  description: Spectacular Test Runner for JavaScript
+  website_url: http://karma-runner.github.io/
+  version: 1.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Browser Testing
+  image_url: https://img.stackshare.io/service/1420/TidYGd6a.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: Log4j
+  description: A Java-based logging utility
+  website_url: https://logging.apache.org/log4j/2.x/
+  version: 1.2.17
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Logging Tools
+  image_url: https://img.stackshare.io/service/2804/Coralogix-log4j-integration.jpg
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Julian
+  last_updated_on: 2017-09-05 03:17:24.000000000 Z
+- name: Protractor
+  description: End-to-end test framework for Angular and AngularJS applications
+  website_url: http://angular.github.io/protractor
+  version: 5.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/1754/protractor-logo1.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: TSLint
+  description: An extensible linter for the TypeScript language
+  website_url: https://github.com/palantir/tslint
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/5561/303157.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/animations"
+  description: Angular - animations integration with web-animations
+  package_url: https://www.npmjs.com/@angular/animations
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16010/default_af9df0bc9fa88191d2fe609204c5bd7599c1a797.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/cli"
+  description: CLI tool for Angular
+  package_url: https://www.npmjs.com/@angular/cli
+  version: 1.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16000/default_976847109ccfe67d00b33d9ff71329b6e82f5f89.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/common"
+  description: Angular - commonly needed directives and services
+  package_url: https://www.npmjs.com/@angular/common
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15913/default_ac622bc364a601d766b9a6f6039f191492f54d65.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/compiler"
+  description: Angular - the compiler library
+  package_url: https://www.npmjs.com/@angular/compiler
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15917/default_4040fefea2f98006727f63d042275b96a275ab2d.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/compiler-cli"
+  description: Angular - the compiler CLI for Node.js
+  package_url: https://www.npmjs.com/@angular/compiler-cli
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15927/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/forms"
+  description: Angular - directives and services for creating forms
+  package_url: https://www.npmjs.com/@angular/forms
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15944/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/http"
+  description: Angular - the http service
+  package_url: https://www.npmjs.com/@angular/http
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15977/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/language-service"
+  description: Angular - language services
+  package_url: https://www.npmjs.com/@angular/language-service
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16047/default_924b66c04aa848a4028c1a5753a23dae0f835f86.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/platform-browser"
+  description: Angular - library for using Angular in a web browser
+  package_url: https://www.npmjs.com/@angular/platform-browser
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15921/default_54b691c123fc8979741e800e4dcd3936c0f3b246.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/platform-browser-dynamic"
+  description: Angular - library for using Angular in a web browser with JIT compilation
+  package_url: https://www.npmjs.com/@angular/platform-browser-dynamic
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15933/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@angular/router"
+  description: Angular - the routing library
+  package_url: https://www.npmjs.com/@angular/router
+  version: 4.2.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15965/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@types/jasmine"
+  description: TypeScript definitions for Jasmine
+  package_url: https://www.npmjs.com/@types/jasmine
+  version: 2.5.53
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15924/default_ac622bc364a601d766b9a6f6039f191492f54d65.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@types/jasminewd2"
+  description: TypeScript definitions for jasminewd2
+  package_url: https://www.npmjs.com/@types/jasminewd2
+  version: 2.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16060/default_924b66c04aa848a4028c1a5753a23dae0f835f86.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: "@types/node"
+  description: TypeScript definitions for Node.js
+  package_url: https://www.npmjs.com/@types/node
+  version: 6.0.60
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: codelyzer
+  description: Linting for Angular applications
+  package_url: https://www.npmjs.com/codelyzer
+  version: 3.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15956/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: core-js
+  description: Standard library
+  package_url: https://www.npmjs.com/core-js
+  version: 2.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15869/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: jasmine-core
+  description: Official packaging of Jasmine's core files for use by Node.js projects
+  package_url: https://www.npmjs.com/jasmine-core
+  version: 2.6.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15905/default_3af1504b6f77c55205ba630fe08c472f43b95f6e.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: jasmine-spec-reporter
+  description: Spec reporter for jasmine behavior-driven development framework
+  package_url: https://www.npmjs.com/jasmine-spec-reporter
+  version: 4.1.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16066/default_8725384794b44fe56f31da1d21ae759cf07be7a5.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: karma-chrome-launcher
+  description: A Karma plugin. Launcher for Chrome and Chrome Canary
+  package_url: https://www.npmjs.com/karma-chrome-launcher
+  version: 2.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15860/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: karma-cli
+  description: The Karma command line interface
+  package_url: https://www.npmjs.com/karma-cli
+  version: 1.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16104/default_efe4f0184d007a28e793d89a59e058b742bc9177.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: karma-coverage-istanbul-reporter
+  description: A karma reporter that uses the latest istanbul 1.x APIs
+  package_url: https://www.npmjs.com/karma-coverage-istanbul-reporter
+  version: 1.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15998/default_f8be85789693a9901dbcfa43c135c60525ae49a1.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: karma-jasmine
+  description: A Karma plugin - adapter for Jasmine testing framework
+  package_url: https://www.npmjs.com/karma-jasmine
+  version: 1.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15886/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: karma-jasmine-html-reporter
+  description: A Karma plugin
+  package_url: https://www.npmjs.com/karma-jasmine-html-reporter
+  version: 0.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15999/default_7a465bc85b23fd837cbc038fd1d504632c41a884.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: sockjs-client
+  description: SockJS-client is a browser JavaScript library that provides a WebSocket-like
+    object
+  package_url: https://www.npmjs.com/sockjs-client
+  version: 1.1.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17551/default_8d32936cb624bf7f51657c1540463db0a3c4106e.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: ts-node
+  description: TypeScript execution environment and REPL for node.js
+  package_url: https://www.npmjs.com/ts-node
+  version: 3.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: zone.js
+  description: Zones for JavaScript
+  package_url: https://www.npmjs.com/zone.js
+  version: 0.8.14
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15915/default_59a1b5716eefa3750c20936c3d53ff13a6390ee1.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Julian
+  last_updated_on: 2017-09-30 04:50:22.000000000 Z
+- name: com.fasterxml.jackson.core:jackson-databind
+  description: 'General data-binding functionality for Jackson: works on core streaming
+    API'
+  version: 2.7.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: cepix
+  last_updated_on: 2019-01-02 04:55:42.000000000 Z
+  vulnerabilities:
+  - name: Arbitrary Code Execution in jackson-databind
+    cve_id: CVE-2018-14718
+    cve_url: https://github.com/advisories/GHSA-645p-88qh-w398
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.5
+  - name: Arbitrary Code Execution in jackson-databind
+    cve_id: CVE-2018-14719
+    cve_url: https://github.com/advisories/GHSA-4gq5-ch57-c2mg
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.5
+  - name: 'FasterXML jackson-databind allows unauthenticated remote code execution '
+    cve_id: CVE-2018-7489
+    cve_url: https://github.com/advisories/GHSA-cggj-fvv3-cqwv
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.8.11.1
+  - name: Improper Input Validation in jackson-databind
+    cve_id: CVE-2019-17267
+    cve_url: https://github.com/advisories/GHSA-f3j5-rmmp-3fc5
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.8.11.5
+  - name: jackson-databind is vulnerable to a deserialization flaw
+    cve_id: CVE-2017-7525
+    cve_url: https://github.com/advisories/GHSA-qxxx-2pp7-5hmx
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.1
+  - name: Polymorphic Typing in FasterXML jackson-databind
+    cve_id: CVE-2019-16942
+    cve_url: https://github.com/advisories/GHSA-mx7p-6679-8g3q
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.9.10.1
+  - name: Deserialization of Untrusted Data in jackson-databind
+    cve_id: CVE-2020-8840
+    cve_url: https://github.com/advisories/GHSA-4w82-r329-3q67
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.7
+  - name: jackson-databind mishandles the interaction between serialization gadgets
+      and typing
+    cve_id: CVE-2020-9548
+    cve_url: https://github.com/advisories/GHSA-p43x-xfjf-5jhr
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.7
+  - name: jackson-databind mishandles the interaction between serialization gadgets
+      and typing
+    cve_id: CVE-2020-9547
+    cve_url: https://github.com/advisories/GHSA-q93h-jc49-78gg
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.7
+  - name: Polymorphic Typing issue in FasterXML jackson-databind
+    cve_id: CVE-2019-14540
+    cve_url: https://github.com/advisories/GHSA-h822-r4r5-v8jg
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.8.11.5
+  - name: Polymorphic Typing issue in FasterXML jackson-databind
+    cve_id: CVE-2019-16335
+    cve_url: https://github.com/advisories/GHSA-85cw-hj65-qqv9
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.8.11.5
+  - name: XML External Entity Reference (XXE) in jackson-databind
+    cve_id: CVE-2018-14720
+    cve_url: https://github.com/advisories/GHSA-x2w5-5m2g-7h5m
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.5
+  - name: Deserialization of Untrusted Data in jackson-databind
+    cve_id: CVE-2019-20330
+    cve_url: https://github.com/advisories/GHSA-gww7-p5w4-wrfv
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.7
+  - name: Deserialization of Untrusted Data in jackson-databind
+    cve_id: CVE-2018-11307
+    cve_url: https://github.com/advisories/GHSA-qr7j-h6gg-jmgc
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.4
+  - name: jackson-databind vulnerable to remote code execution due to incorrect deserialization
+      and blocklist bypass
+    cve_id: CVE-2017-17485
+    cve_url: https://github.com/advisories/GHSA-rfx6-vp9g-rh7v
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.8.11
+  - name: jackson-databind polymorphic typing issue
+    cve_id: CVE-2019-17531
+    cve_url: https://github.com/advisories/GHSA-gjmw-vf9h-g25v
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.8.11.5
+  - name: jackson-databind polymorphic typing issue
+    cve_id: CVE-2019-16943
+    cve_url: https://github.com/advisories/GHSA-fmmc-742q-jg75
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.8.11.5
+  - name: Deserialization of untrusted data in FasterXML jackson-databind
+    cve_id: CVE-2019-14379
+    cve_url: https://github.com/advisories/GHSA-6fpp-rgj9-8rwc
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.6
+  - name: Deserialization of Untrusted Data in jackson-databind
+    cve_id: CVE-2018-19361
+    cve_url: https://github.com/advisories/GHSA-mx9v-gmh4-mgqw
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.5
+  - name: Server-Side Request Forgery (SSRF) in jackson-databind
+    cve_id: CVE-2018-14721
+    cve_url: https://github.com/advisories/GHSA-9mxf-g3x6-wv74
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.5
+  - name: Deserialization of Untrusted Data in jackson-databind due to polymorphic
+      deserialization
+    cve_id: CVE-2018-19360
+    cve_url: https://github.com/advisories/GHSA-f9hv-mg5h-xcw9
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.7.9.5
+  - name: Deeply nested json in jackson-databind
+    cve_id: CVE-2020-36518
+    cve_url: https://github.com/advisories/GHSA-57j2-w4cx-62h2
+    detected_date: Mar 23
+    severity: high
+    first_patched: 2.12.6.1
+  - name: Deserialization of Untrusted Data in jackson-databind
+    cve_id: CVE-2018-5968
+    cve_url: https://github.com/advisories/GHSA-w3f4-3q6j-rh82
+    detected_date: Aug 22
+    severity: high
+    first_patched: 
+  - name: jackson-databind before 2.9.10.4 vulnerable to unsafe deserialization
+    cve_id: CVE-2020-10650
+    cve_url: https://github.com/advisories/GHSA-rpr3-cw39-3pxh
+    detected_date: Jul 16
+    severity: high
+    first_patched: 2.9.10.4
+  - name: Deserialization of untrusted data in FasterXML jackson-databind
+    cve_id: CVE-2019-14439
+    cve_url: https://github.com/advisories/GHSA-gwp4-hfv6-p7hw
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.7.9.6
+  - name: Deserialization of Untrusted Data in jackson-databind
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-wrr7-33fx-rcvj
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.7.9.4
+  - name: Deserialization of Untrusted Data
+    cve_id: CVE-2018-12023
+    cve_url: https://github.com/advisories/GHSA-6wqp-v4v6-c87c
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.7.9.4
+  - name: Polymorphic deserialization of malicious object in jackson-databind
+    cve_id: CVE-2019-14892
+    cve_url: https://github.com/advisories/GHSA-cf6r-3wgc-h863
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.8.11.5
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-24750
+    cve_url: https://github.com/advisories/GHSA-qjw2-hr98-qgfh
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.6
+  - name: XML External Entity (XXE) Injection in Jackson Databind
+    cve_id: CVE-2020-25649
+    cve_url: https://github.com/advisories/GHSA-288c-cq4h-88gq
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.9.10.7
+  - name: Serialization gadget exploit in jackson-databind
+    cve_id: CVE-2020-35728
+    cve_url: https://github.com/advisories/GHSA-5r5r-6hpj-8gg9
+    detected_date: Nov 22
+    severity: high
+    first_patched: 2.9.10.8
+  - name: jackson-databind mishandles the interaction between serialization gadgets
+      and typing
+    cve_id: CVE-2020-10673
+    cve_url: https://github.com/advisories/GHSA-fqwf-pjwf-7vqv
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.9.10.4
+  - name: jackson-databind Deserialization of Untrusted Data vulnerability
+    cve_id: CVE-2018-12022
+    cve_url: https://github.com/advisories/GHSA-cjjf-94ff-43w7
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.7.9.4
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36181
+    cve_url: https://github.com/advisories/GHSA-cvm9-fjm9-3572
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36186
+    cve_url: https://github.com/advisories/GHSA-v585-23hc-c647
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Code Injection in jackson-databind
+    cve_id: CVE-2020-24616
+    cve_url: https://github.com/advisories/GHSA-h3cw-g4mq-c5x2
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.6
+  - name: Serialization gadgets exploit in jackson-databind
+    cve_id: CVE-2020-35490
+    cve_url: https://github.com/advisories/GHSA-wh8g-3j2c-rqj5
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Serialization gadgets exploit in jackson-databind
+    cve_id: CVE-2020-35491
+    cve_url: https://github.com/advisories/GHSA-r3gr-cxrf-hg25
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36182
+    cve_url: https://github.com/advisories/GHSA-89qr-369f-5m5x
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36179
+    cve_url: https://github.com/advisories/GHSA-9gph-22xh-8x98
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36185
+    cve_url: https://github.com/advisories/GHSA-8w26-6f25-cm9x
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36180
+    cve_url: https://github.com/advisories/GHSA-8c4j-34r4-xr8g
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36184
+    cve_url: https://github.com/advisories/GHSA-m6x4-97wx-4q27
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36183
+    cve_url: https://github.com/advisories/GHSA-9m6f-7xcq-8vf8
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36188
+    cve_url: https://github.com/advisories/GHSA-f9xh-2qgp-cq57
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36187
+    cve_url: https://github.com/advisories/GHSA-r695-7vr9-jgc2
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Unsafe Deserialization in jackson-databind
+    cve_id: CVE-2020-36189
+    cve_url: https://github.com/advisories/GHSA-vfqx-33qm-g869
+    detected_date: Jan 28
+    severity: high
+    first_patched: 2.9.10.8
+  - name: Information exposure in FasterXML jackson-databind
+    cve_id: CVE-2019-12086
+    cve_url: https://github.com/advisories/GHSA-5ww9-j83m-q7qx
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.9.9
+  - name: Uncontrolled Resource Consumption in FasterXML jackson-databind
+    cve_id: CVE-2022-42004
+    cve_url: https://github.com/advisories/GHSA-rgv9-q543-rqg4
+    detected_date: Oct 5
+    severity: high
+    first_patched: 2.12.7.1
+  - name: High severity vulnerability that affects com.fasterxml.jackson.core:jackson-databind
+    cve_id: CVE-2018-19362
+    cve_url: https://github.com/advisories/GHSA-c8hm-7hpq-7jhg
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.7.9.5
+  - name: Uncontrolled Resource Consumption in Jackson-databind
+    cve_id: CVE-2022-42003
+    cve_url: https://github.com/advisories/GHSA-jjjh-jjxp-wpff
+    detected_date: Oct 5
+    severity: high
+    first_patched: 2.12.7.1
+  - name: Deserialization of untrusted data in jackson-databind
+    cve_id: CVE-2021-20190
+    cve_url: https://github.com/advisories/GHSA-5949-rw7g-wx7w
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.9.10.7
+  - name: Deserialization of Untrusted Data in FasterXML jackson-databind
+    cve_id: CVE-2019-12384
+    cve_url: https://github.com/advisories/GHSA-mph4-vhrx-mv67
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.9.9.1
+  - name: Deserialization of untrusted data in FasterXML jackson-databind
+    cve_id: CVE-2019-12814
+    cve_url: https://github.com/advisories/GHSA-cmfg-87vq-g5g4
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.9.9.1
+- name: log4j:log4j
+  description: Apache Log4j 1.2
+  version: 1.2.17
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Julian
+  last_updated_on: 2017-09-05 03:17:24.000000000 Z
+  vulnerabilities:
+  - name: SQL Injection in Log4j 1.2.x
+    cve_id: CVE-2022-23305
+    cve_url: https://github.com/advisories/GHSA-65fg-84f6-3jq3
+    detected_date: Jan 22
+    severity: critical
+    first_patched: 
+  - name: Deserialization of Untrusted Data in Apache Log4j
+    cve_id: CVE-2022-23307
+    cve_url: https://github.com/advisories/GHSA-f7vh-qwp3-x37m
+    detected_date: Nov 26
+    severity: critical
+    first_patched: 
+  - name: Deserialization of Untrusted Data in Log4j
+    cve_id: CVE-2019-17571
+    cve_url: https://github.com/advisories/GHSA-2qrg-x229-3v8q
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 
+  - name: Deserialization of Untrusted Data in Log4j 1.x
+    cve_id: CVE-2022-23302
+    cve_url: https://github.com/advisories/GHSA-w9p3-5cr8-m3jj
+    detected_date: Jan 22
+    severity: high
+    first_patched: 
+  - name: JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data
+    cve_id: CVE-2021-4104
+    cve_url: https://github.com/advisories/GHSA-fp5r-v3w9-4333
+    detected_date: Dec 15
+    severity: high
+    first_patched: 
+- name: org.springframework.boot:spring-boot-starter-web
+  description: Starter for building web, including RESTful, applications using Spring
+    MVC
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: cepix
+  last_updated_on: 2019-01-02 04:55:42.000000000 Z
+- name: org.springframework.data:spring-data-mongodb
+  description: MongoDB support for Spring Data
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: cepix
+  last_updated_on: 2019-01-02 04:55:42.000000000 Z
+- name: org.springframework:spring-messaging
+  description: Spring Messaging
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: cepix
+  last_updated_on: 2019-01-02 04:55:42.000000000 Z
+- name: org.springframework:spring-web
+  description: Spring Web
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: cepix
+  last_updated_on: 2019-01-02 04:55:42.000000000 Z
+- name: org.springframework:spring-websocket
+  description: Spring WebSocket
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/julianmojico/WeatherDashboard/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: cepix
+  last_updated_on: 2019-01-02 04:55:42.000000000 Z
